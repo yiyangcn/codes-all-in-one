@@ -1,21 +1,25 @@
 package structure.collection.list;
 
+
+
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Vector;
+
 
 /**
- * Vectpr implements List
+ * base structure is linkedlist
+ * it also implements Queue
  * 
- * Base data structure is array, 
- * search quickly 
- * but delete/add elements at specified position slowly
+ * search slowly, add/delete elements 
+ * in specified pisition quickly
  * 
- * Thread security, inefficiently
+ * thread insecurity
  */
-public class VectorDemo {
-    public static void main(String[] args) {
-        List<String> list1 = new Vector<>();
-        List<String> list2 = new Vector<>();
+public class LinkedListDemo {
+
+    static void linkedlist() {
+        List<String> list1 = new LinkedList<String>();
+        List<String> list2 = new LinkedList<String>();
         // adds element to the end of the list
         list1.add("a");
         list2.add("b");
@@ -25,7 +29,7 @@ public class VectorDemo {
         list1.addAll(list2);
         System.out.println(list1);
         list1.addAll(0,list2);
-        list1.contains("a");
+        list1.contains("a"); 
         System.out.println(list1);
         //  returns a element at the specified position in the list
         String ele = list1.get(2);
@@ -49,7 +53,20 @@ public class VectorDemo {
         System.out.println(list1);
         // return size
         list1.size();
-         // removes all elements from this list
+        // removes all elements from this list
         list1.clear();
     }
+
+    static void queue() {
+        // Queue<String> list1 = new LinkedList<>();
+        // Queue<String> list2 = new LinkedList<>();
+
+    }
+    public static void main(String[] args) {
+        
+        linkedlist();
+        
+    }
+    
+    
 }
