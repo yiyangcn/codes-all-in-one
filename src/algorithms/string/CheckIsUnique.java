@@ -3,7 +3,7 @@ package algorithms.string;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Different {
+public class CheckIsUnique {
     static public boolean checkDifferent(String iniString) {
         // write code here
         // O(n)  
@@ -21,9 +21,23 @@ public class Different {
         }
         return true;
     }
-
+    
+    static public boolean bitDifferent(String iniString) {
+        return true;
+    }
+    static public boolean indexOfCheck(String iniString) {
+        int len = iniString.length();
+        for (int i=0; i < len-1; i++) {
+            char c = iniString.charAt(i);
+            if (iniString.indexOf(c, i+1) !=-1) {
+                return false;
+            }
+        }
+        return true;
+    }
     public static void main(String[] args) {
         String iniString = "fbcdbea";
+        System.out.println(iniString.indexOf(0));
         System.out.println(checkDifferent(iniString));
     }
 }
