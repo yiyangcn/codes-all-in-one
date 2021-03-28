@@ -6,7 +6,7 @@ import java.util.List;
 public class Different {
     static public boolean checkDifferent(String iniString) {
         // write code here
-        // O(n)
+        // O(n) 
         // leetcode https://leetcode-cn.com/problems/is-unique-lcci/
 
         List<String> list = new ArrayList<String>();
