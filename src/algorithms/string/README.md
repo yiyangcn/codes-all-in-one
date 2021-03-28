@@ -15,7 +15,7 @@
 > **indexOf(String ch, int fromIndex)**
 > Returns the index within this string of the first occurrence of the specified substring, starting at the specified index.
 
-### Different.java
+### CheckIsUnique.java
 
 https://leetcode-cn.com/problems/is-unique-lcci/
 
