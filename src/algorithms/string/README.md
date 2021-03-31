@@ -63,4 +63,20 @@ https://leetcode-cn.com/problems/check-permutation-lcci
    1. map2包含map1中的key
    2. 所包含的key的值相等
 
-   
+### ReplaceSpaces.java
+
+ https://leetcode-cn.com/problems/string-to-url-lcci
+
+**方法1：用API解题**
+
+略
+
+**方法2：从前往后遍历，双指针**
+
+思路：
+
+1. 一个指针用来遍历字符串，另一个指针控制新建字符数组的下标，
+2. 从前往后遍历，当为空格时，将`20%`赋值给字符数组，下标增加3，否者将当前字符赋值给字符数组，下标增加1
+
+`用同样的思路，通过字符串不断累加会超过时间限制，不知道为啥`
+
