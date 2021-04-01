@@ -80,3 +80,13 @@ https://leetcode-cn.com/problems/check-permutation-lcci
 
 `用同样的思路，通过字符串不断累加会超过时间限制，不知道为啥`
 
+### CanPermutePalindrome.java
+
+https://leetcode-cn.com/problems/palindrome-permutation-lcci
+
+**方法1：哈希表计数**
+
+思路：
+
+1. 哈希表计数 相同时计数加一
+2. 最多只有一个是奇数 则是回文排列
