@@ -90,3 +90,17 @@ https://leetcode-cn.com/problems/palindrome-permutation-lcci
 
 1. 哈希表计数 相同时计数加一
 2. 最多只有一个是奇数 则是回文排列
+
+### OneEditAway.java
+
+https://leetcode-cn.com/problems/one-away-lcci
+
+**方法1：分情况判断各个击破**
+
+思路：
+
+分为三种情况：
+
+1. 当两个字符串的长度差大于等于2时，必然无法一次编辑
+2. 当两个字符串长度相等时，通过遍历计算对应下标不相等的字符个数，当计数值大于1时，必然无法一次编辑
+3. 当两个字符串长度不等时，通过遍历当遇到字符串不相等时，例如：`abcd`和`acd`，当b和c不相等时，判断b以后的字符串与a以后的字符串是否相等，如果不相等，则无法一次编辑
