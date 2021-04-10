@@ -104,3 +104,15 @@ https://leetcode-cn.com/problems/one-away-lcci
 1. 当两个字符串的长度差大于等于2时，必然无法一次编辑
 2. 当两个字符串长度相等时，通过遍历计算对应下标不相等的字符个数，当计数值大于1时，必然无法一次编辑
 3. 当两个字符串长度不等时，通过遍历当遇到字符串不相等时，例如：`abcd`和`acd`，当b和c不相等时，判断b以后的字符串与a以后的字符串是否相等，如果不相等，则无法一次编辑
+
+### CompressString.java
+
+https://leetcode-cn.com/problems/compress-string-lcci
+
+**方法1：双指针一次遍历**
+
+思路：
+
+1. 初始时firstIndex为第一个不同的字符所在下标，secondIndex为第二个字符所在的下标，通过count计算字符连续出现的个数
+2. 逐步移动secondIndex，当secondIndex所指的字符与firstIndex所指的字符不一致时，将压缩字符串。
+3. 注意secondIndex越界
