@@ -21,6 +21,7 @@ public class HashSetDemo {
         set.add("a");
         System.out.println(set);
         set.remove("e");
+        System.out.println(set.contains("c"));
         Iterator<String> iterable = set.iterator();
         while (iterable.hasNext()){
             String element = iterable.next();
