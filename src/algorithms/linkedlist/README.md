@@ -24,3 +24,14 @@ https://leetcode-cn.com/problems/kth-node-from-end-of-list-lcci
 
 1. 第一次遍历计算链表的长度
 2. 通过计算的长度判断当前处于倒数第几个节点，当处于第k个节点时返回当前节点的值
+
+**DeleteNode.java**
+
+https://leetcode-cn.com/problems/delete-middle-node-lcci/
+
+==注意审题==
+
+思路：
+
+1. 先将Node的下个节点的值赋值给要删除的节点
+2. 然后将node的下个节点指向下下个节点
