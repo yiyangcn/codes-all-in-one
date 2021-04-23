@@ -51,3 +51,17 @@ https://leetcode-cn.com/problems/partition-list-lcci/
 
 ### AddTwoNumber.java
 
+https://leetcode-cn.com/problems/sum-lists-lcci/
+
+==这题不能使用整型相加的方式求和，会超出int的最大范围==
+
+**方法1：原地相加**
+
+思路：
+
+1. 先遍历一遍，当节点相加大于10要进位，当`l1`和`l2`有一个为空时退出循环
+2. 由于可能出现`l1`和`l2`的长度不同，因此有三种情况
+   1. 当`l1`遍历完后`l2`还没有遍历完
+   2. 当`l2`遍历完后`l1`还没有遍历完
+   3. `l1`和`l2`长度相同，但还要判断是否进位
+3. 前两种情况再根据1遍历一次即可
