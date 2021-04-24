@@ -65,3 +65,21 @@ https://leetcode-cn.com/problems/sum-lists-lcci/
    2. 当`l2`遍历完后`l1`还没有遍历完
    3. `l1`和`l2`长度相同，但还要判断是否进位
 3. 前两种情况再根据1遍历一次即可
+
+### IsPalindrome.java
+
+https://leetcode-cn.com/problems/palindrome-linked-list-lcci
+
+==比大小用equals方法==
+
+==这道题的节点可能时负数==
+
+**方法1：二次遍历**
+
+思路：
+
+1. 第一次遍历将节点加入列表
+2. 第二次遍历，头尾双指针取值判断，如果不相等者返回false，否者继续遍历
+
+**方法2：递归**
+
