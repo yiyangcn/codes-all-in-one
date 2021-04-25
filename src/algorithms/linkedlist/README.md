@@ -83,3 +83,14 @@ https://leetcode-cn.com/problems/palindrome-linked-list-lcci
 
 **方法2：递归**
 
+### DetectCycle.java
+
+https://leetcode-cn.com/problems/linked-list-cycle-lcci/
+
+**方法1：HashSet存node**
+
+==set存储的node是一系列指针==
+
+思路：
+
+- 借助set存储node，如果set包含node则说明有环
