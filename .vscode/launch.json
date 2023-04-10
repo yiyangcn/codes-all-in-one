@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IteratorDemo",
+            "request": "launch",
+            "mainClass": "patterns.Iterator.IteratorDemo",
+            "projectName": "codes-all-in-one_e23556eb"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "test.Test",
+            "projectName": "codes-all-in-one_e23556eb"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountLongWords",
+            "request": "launch",
+            "mainClass": "io.CountLongWords",
+            "projectName": "codes-all-in-one_e23556eb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ValueCaculator",
+            "request": "launch",
+            "mainClass": "algorithms.finance.ValueCaculator",
+            "projectName": "codes-all-in-one_e23556eb"
+        },
+        {
+            "type": "java",
             "name": "Launch SelectionSort",
             "request": "launch",
             "mainClass": "algorithms.sort.SelectionSort",
