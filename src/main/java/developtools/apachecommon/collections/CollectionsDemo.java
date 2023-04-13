@@ -1,11 +1,11 @@
 package developtools.apachecommon.collections;
 
+import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.collections4.list.AbstractLinkedList;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * org.apache.commons.collections – CommonsCollections自定义的一组公用的接口和工具类
@@ -36,11 +36,32 @@ import java.util.List;
 public class CollectionsDemo {
 
     public static void main(String[] args) {
+        collectionUtils();
+        mapUtils();
+    }
+    private static void collectionUtils() {
+        List<String> list1 = null;
+        // 进行空值判断，空或者size==0 返回true
+        System.out.println(CollectionUtils.isEmpty(list1));
+        // 交集并集 差集
+        list1 = new ArrayList<>();
+        list1.add("A");
+        list1.add("B");
 
-        ConcreteLinkedList<String> concreteLinkedList = new ConcreteLinkedList<>();
+        List<String> list2 = new ArrayList<>();
+        list2.add("B");
+        list2.add("C");
+        // 交集
+        System.out.println(CollectionUtils.intersection(list1, list2));
+        // 并集
+        System.out.println(CollectionUtils.union(list1, list2));
+        // 差集
+        System.out.println(CollectionUtils.subtract(list1, list2));
+    }
 
-        concreteLinkedList.add("test");
-        Object[] objects = concreteLinkedList.toArray();
-        System.out.println(objects.toString());
+
+    private static void mapUtils() {
+        Map<String, String> map = new HashMap<>();
+        System.out.println(MapUtils.isEmpty(map));
     }
 }
