@@ -32,7 +32,10 @@ public class LambdaUsageDemo {
         filterPersonList.forEach(person -> System.out.println("name:" + person.getName()));
         // 顺序执行
         personList.stream().collect(Collectors.toList());
-
+        // 并行 不同线程一起执行
+        personList.stream().parallel().collect(Collectors.toList());
+        // 将集合类元素进行转换
+        personList.stream().map( p-> new Person()).collect(Collectors.toList()).forEach(person -> System.out.println("name:" + person.getName()));
 
     }
 }
